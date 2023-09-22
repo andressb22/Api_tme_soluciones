@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const PORT = process.env.PORT || 5000
 
 const app = express();
 app.use(cors());
@@ -30,6 +31,6 @@ app.post("/saveInfoClient", (req, res) => {
   saveInfoClient();
 });
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("puerto escuchando en puerto 5000");
 });
