@@ -7,6 +7,10 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.get('/prueba',(req,res)=>{
+  res.json({data:'api funciona correctamente'})
+})
+
 app.post("/saveInfoClient", (req, res) => {
   const { nombre, correo, telefono, tipoTrasporte, tipoCarga, observaciones } =
     req.body;
