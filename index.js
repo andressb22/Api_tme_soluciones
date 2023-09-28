@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 const app = express();
 
 const corsOptions = {
-  origin: 'https://www.tmesoluciones.co/', // Cambia esto al origen de tu aplicación cliente
+  origin: 'https://www.tmesoluciones.co', // Cambia esto al origen de tu aplicación cliente
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Permite el envío de cookies y encabezados de autenticación
   optionsSuccessStatus: 204, // Devuelve un código de estado 204 si la opción Preflight es exitosa
